@@ -10,7 +10,11 @@ const app = (args) =>{
         movie.add()
         console.log(moviesArray);
     }else if(args.addMany){
-        console.log("add many");
+        const movie1 = new Movie(args.title, args.genre, args.actor, args.year)
+        movie1.add()
+        const movie2 = new Movie(args.title2, args.genre2, args.actor2, args.year2)
+        movie2.add()
+        console.log(moviesArray);
     }else{
         console.log("incorrect command");
     }
